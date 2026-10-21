@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer utilities{
+    .container {
+    width: 80%;
+    }
+}
