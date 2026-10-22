@@ -322,9 +322,6 @@
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
-  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -481,6 +478,9 @@
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -572,6 +572,9 @@
   .bg-\[url\(\'\.\.\/assets\/tesla-image\.png\'\)\] {
     background-image: url('../assets/tesla-image.png');
   }
+  .bg-\[url\(\'assets\/hero-image\.png\'\)\] {
+    background-image: url('assets/hero-image.png');
+  }
   .bg-contain {
     background-size: contain;
   }
@@ -584,6 +587,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .fill-white {
+    fill: var(--color-white);
+  }
   .object-contain {
     object-fit: contain;
   }
@@ -593,8 +599,11 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -607,9 +616,6 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
-  }
-  .py-0 {
-    padding-block: 0px;
   }
   .py-1 {
     padding-block: var(--spacing);
@@ -647,11 +653,26 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-\[1px\] {
+    padding-block: 1px;
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
+  .py-\[12px\] {
+    padding-block: 12px;
+  }
   .py-\[14px\] {
     padding-block: 14px;
   }
   .py-\[15px\] {
     padding-block: 15px;
+  }
+  .py-\[16px\] {
+    padding-block: 16px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
   }
   .py-\[25px\] {
     padding-block: 25px;
@@ -662,23 +683,14 @@
   .py-\[66px\] {
     padding-block: 66px;
   }
-  .pt-15 {
-    padding-top: calc(var(--spacing) * 15);
+  .py-\[100px\] {
+    padding-block: 100px;
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
   }
-  .pb-1 {
-    padding-bottom: var(--spacing);
-  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
-  }
-  .pb-15 {
-    padding-bottom: calc(var(--spacing) * 15);
-  }
-  .pb-30 {
-    padding-bottom: calc(var(--spacing) * 30);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -688,9 +700,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .font-sans {
-    font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -785,17 +794,11 @@
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
-  .text-gray-200 {
-    color: var(--color-gray-200);
+  .text-\[\#\] {
+    color: #;
   }
   .text-gray-300 {
     color: var(--color-gray-300);
-  }
-  .text-gray-400 {
-    color: var(--color-gray-400);
-  }
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
   .text-gray-900 {
     color: var(--color-gray-900);
@@ -869,6 +872,14 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -889,6 +900,12 @@
     color: #D9DBE1;
   }
   @media (hover: hover) {
+    .hover\:scale-105:hover {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .hover\:border-b-2:hover {
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 2px;
@@ -896,8 +913,17 @@
     .hover\:border-green-500:hover {
       border-color: var(--color-green-500);
     }
+    .hover\:bg-green-500:hover {
+      background-color: var(--color-green-500);
+    }
     .hover\:bg-green-700:hover {
       background-color: var(--color-green-700);
+    }
+    .hover\:fill-green-500:hover {
+      fill: var(--color-green-500);
+    }
+    .hover\:py-2\.5:hover {
+      padding-block: calc(var(--spacing) * 2.5);
     }
     .hover\:text-green-500:hover {
       color: var(--color-green-500);
@@ -971,8 +997,23 @@
     .md\:py-20 {
       padding-block: calc(var(--spacing) * 20);
     }
+    .md\:py-\[2px\] {
+      padding-block: 2px;
+    }
+    .md\:py-\[5px\] {
+      padding-block: 5px;
+    }
+    .md\:py-\[10px\] {
+      padding-block: 10px;
+    }
+    .md\:py-\[15px\] {
+      padding-block: 15px;
+    }
     .md\:py-\[100px\] {
       padding-block: 100px;
+    }
+    .md\:py-\[px\] {
+      padding-block: px;
     }
     .md\:pt-15 {
       padding-top: calc(var(--spacing) * 15);
@@ -1022,11 +1063,6 @@
     }
   }
   @media (width >= 64rem) {
-    @media (width >= 64rem) {
-      .lg\:lg\:mx-0 {
-        margin-inline: 0px;
-      }
-    }
     .lg\:mx-0 {
       margin-inline: 0px;
     }
@@ -1071,9 +1107,6 @@
     .lg\:w-1\/2 {
       width: calc(1 / 2 * 100%);
     }
-    .lg\:w-1\/4 {
-      width: calc(1 / 4 * 100%);
-    }
     .lg\:w-1\/6 {
       width: calc(1 / 6 * 100%);
     }
@@ -1097,9 +1130,6 @@
     }
     .lg\:w-9\/15 {
       width: calc(9 / 15 * 100%);
-    }
-    .lg\:w-full {
-      width: 100%;
     }
     .lg\:flex-nowrap {
       flex-wrap: nowrap;
@@ -1127,13 +1157,6 @@
     .lg\:leading-\[76px\] {
       --tw-leading: 76px;
       line-height: 76px;
-    }
-  }
-  @media (width >= 48rem) {
-    @media (width >= 64rem) {
-      .md\:lg\:mx-0 {
-        margin-inline: 0px;
-      }
     }
   }
   @media (prefers-color-scheme: dark) {
@@ -1283,6 +1306,21 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1317,6 +1355,9 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
     }
   }
 }
