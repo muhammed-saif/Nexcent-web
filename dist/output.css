@@ -931,6 +931,9 @@
     .hover\:text-green-600:hover {
       color: var(--color-green-600);
     }
+    .hover\:text-green-700:hover {
+      color: var(--color-green-700);
+    }
   }
   .focus\:border-2:focus {
     border-style: var(--tw-border-style);
