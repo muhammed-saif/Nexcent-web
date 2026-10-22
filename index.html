@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html class="" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Muhammed Saif">
@@ -25,8 +25,8 @@
                     <li class="flex itemes-center"><a class="text-md text-gray-900 dark:text-[#F5F7FA]  font-regular font-sm leading-4 mr-10 py-2.5 transition hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Testimonial</a></li>
                     <li class="flex itemes-center"><a class="text-md text-gray-900 dark:text-[#F5F7FA]  font-regular font-sm leading-4 mr-20 py-2.5 uppercase transition hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Faq</a></li>
                     <!-- Light or Dark Button -->
-                    <li class="hidden md:flex itemes-center transition-all duration-300 mx-5"  onclick="document.documentElement.classList.toggle('dark')">
-                        <button id="light-dark" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
+                    <li class="hidden md:flex itemes-center transition-all duration-300 mx-5">
+                        <button id="light-dark-lg" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
                             <svg class="hidden dark:block size-5 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
                             </svg>
@@ -39,9 +39,9 @@
                     <li class="flex itemes-center"><a class="text-sm text-white font-medium font-sm leading-4 py-2.5 px-5 bg-[#4CAF4F] rounded-lg transition hover:bg-green-700" href="">Sign Up</a></li>
                 </ul>
             </div>
-            <div class="w-4/6 flex justify-end -mt-3 md:mt-0 lg:hidden" onclick="document.documentElement.classList.toggle('dark')">
+            <div class="w-4/6 flex justify-end -mt-3 md:mt-0 lg:hidden">
                 <!-- Light or Dark Button -->
-                <button id="light-dark" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
+                <button id="light-dark-sm" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
                     <svg class="hidden dark:block size-5 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
                     </svg>
@@ -50,47 +50,27 @@
                     </svg>
                 </button>
                 <!-- Toggle Button -->
-                <button class="ml-5">
+                <button class="ml-5 ">
                     <svg class="size-7 fill-gray-900 dark:fill-[#F5F7FA]" id="sidebarShowBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
                 </button>
             </div>
-            <!-- Togglr menu -->
+            <!-- Sidebar  menu -->
             <div id="sibebar" class="translate-x-full h-[100vh] w-[250px] transition-all duration-300 lg:hidden fixed top-0 right-0 backdrop-blur-lg">
+                <button class="size-4 mx-auto md:mx-10 text-center md:text-left block py-5 my-3 md:my-5" href="">
+                    <svg id="sidebarRemoveBtn" class="fill-gray-900 dark:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                </button>
                 <ul class="flex flex-col z-50">
-                    <li>
-                        <a class="size-4 mx-auto md:mx-10 text-center md:text-left block py-5 my-3 md:my-5" href="">
-                            <svg id="sidebarRemoveBtn" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
-                        </a>
-                    </li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-medium font-sm leading-4 py-3 transition-colors  hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Home</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Service</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Feature</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Product</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Testimonial</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 uppercase transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Faq</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-medium font-sm leading-4 py-3 transition-colors  hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Home</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Service</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Feature</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Product</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Testimonial</a></li>
+                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 dark:text-[#F5F7FA] font-regular font-sm leading-4 py-3 uppercase transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Faq</a></li>
                     <li><a class="text-sm block mx-10 mt-7 text-center border border-green-600 rounded-lg text-green-600 font-medium font-sm leading-4 py-3 " href="">Log In</a></li>
                     <li><a class="text-sm block mx-10 my-3 text-center text-white font-medium font-sm leading-4 py-3 px-5 bg-green-600 rounded-lg transition-colors hover:bg-green-700" href="">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- Sidebar menu -->
-            <div id="sibebar" class="translate-x-full h-[100vh] w-[250px] transition-transform duration-300 lg:hidden fixed top-0 right-0 bg-white/70 backdrop-blur-lg">
-                <ul class="flex flex-col z-50">
-                    <li>
-                        <a class="size-4 mx-auto md:mx-10 text-center md:text-left block py-5 my-3 md:my-5" href="">
-                            <svg id="sidebarRemoveBtn" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
-                        </a>
-                    </li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-medium font-sm leading-4 py-3 transition-colors  hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Home</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Service</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Feature</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Product</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Testimonial</a></li>
-                    <li><a class="text-md block mx-10 text-center md:text-left text-gray-900 font-regular font-sm leading-4 py-3 uppercase transition-colors hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Faq</a></li>
-                    <li><a class="text-sm block mx-10 mt-7 text-center border border-green-600 rounded-lg text-green-600 font-medium font-sm leading-4 py-3 " href="">Log In</a></li>
-                    <li><a class="text-sm block mx-10 my-3 text-center text-white font-medium font-sm leading-4 py-3 px-5 bg-green-600 rounded-lg transition-colors hover:bg-green-700" href="">Sign Up</a></li>
-                </ul>
-            </div>
     </header>
     <!-- Hero Section -->
     <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
@@ -108,11 +88,11 @@
         </div>
     </section>
     <!-- Client Section -->
-    <section class="w-ful">
+    <section class="w-ful  dark:bg-[#121212]">
         <div class="container mx-auto">
             <div class="w-full py-10">
-                <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-center leadin-9 md:leading-11 text-[#4D4D4D]">Our Clients</h2>
-                <p class="text-md font-medium text-center text-[#717171] my-4">We have been working with some Fortune 500+ clients</p>
+                <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-center leadin-9 md:leading-11 text-[#4D4D4D]  dark:text-[#B4BEC4]">Our Clients</h2>
+                <p class="text-md font-medium text-center text-[#717171]  dark:text-[#9AA6AD] my-4">We have been working with some Fortune 500+ clients</p>
             </div>
             <div class="w-full mx-auto flex justify-center flex-wrap ">
                 <div></div>
@@ -138,11 +118,11 @@
         </div>
     </section>
     <!-- Community Section -->
-    <section class="w-full">
+    <section class="w-full dark:bg-[#121212]">
         <div class="container mx-auto py-20">
             <div class="w-full">
-                <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-[#4D4D4D] leading-9 md:leading-11 text-center">Manage your entire community<br> in a single system</h2>
-                <p class="text-md text-[#717171] font-medium leading-6 text-center my-3">Who is Nextcent suitable for?</p>
+                <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11 text-center">Manage your entire community<br> in a single system</h2>
+                <p class="text-md text-[#717171] dark:text-[#9AA6AD] font-medium leading-6 text-center my-3">Who is Nextcent suitable for?</p>
             </div>
 
             <!-- Card Container -->
@@ -151,38 +131,38 @@
                 <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/membership.png" alt="membership.png"></div>
-                    <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] font-bold leading-9 text-center my-2">Membership Organisations</h3>
-                        <p class="tex-xs md:text-sm text-[#717171] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                    <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">Membership Organisations</h3>
+                        <p class="tex-xs md:text-sm text-[#717171] dark:text-[#9AA6AD] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
                     </div>
                 </div>
                 <!-- Community Card -->
                 <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/national.png" alt="membership.png"></div>
-                        <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] font-bold leading-9 text-center my-2">National Associations</h3>
-                        <p class="tex-xs text-sm text-[#717171] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                        <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">National Associations</h3>
+                        <p class="tex-xs text-sm text-[#717171] dark:text-[#9AA6AD] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
                     </div>
                 </div>
                 <!-- Community Card -->
                 <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/club.png" alt="membership.png"></div>
-                        <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] font-bold leading-9 text-center my-2">Clubs And Groups</h3>
-                        <p class="tex-xs text-sm text-[#717171] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
+                        <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">Clubs And Groups</h3>
+                        <p class="tex-xs text-sm text-[#717171] dark:text-[#9AA6AD] font-medium leading-5 text-center">Our membership management software provides full automation of membership renewals and payments</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero Section 2 -->
-    <section class="w-full">
+    <section class="w-full dark:bg-[#121212]">
         <div class="container mx-auto flex flex-wrap pb-10 md:py-20 justify-between">
             <div class="w-full md:w-5/12">
                 <div class="w-full h-[220px] md:h-[300px] bg-[url('../assets/hero-image-2.png')] bg-no-repeat bg-center bg-contain"></div>
             </div>
             <div class="w-full md:w-7/12 mt-15 md:mt-0">
-                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] leading-9 md:leading-11">The unseen of spending three years at Pixelgrade</h2>
-                <p class="text-sm font-medium text-[#717171] text-center md:text-left leading-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">The unseen of spending three years at Pixelgrade</h2>
+                <p class="text-sm font-medium text-[#717171] dark:text-[#9AA6AD] text-center md:text-left leading-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
                 <div class="w-full flex justify-center md:justify-start">
                     <button class="text-sm text-white leading-6 font medium rounded-sm bg-[#4CAF4F] py-2 px-6 mt-[46px] cursor-pointer hover:bg-green-700 transition-all hover:scale-105 duration-200 ">Learn More</button>
                 </div>
@@ -190,12 +170,12 @@
         </div>
     </section>
     <!-- Data Section  -->
-    <section class="w-full bg-[#F5F7FA]">
+    <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
         <div class="container mx-auto flex flex-wrap justify-between py-[66px]">
             <div class="w-full md:w-1/2 py-5">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] leading-9 md:leading-11">Helping a local</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">Helping a local</h2>
                 <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4CAF4F] leading-9 md:leading-11">business reinvent itsel</h3>
-                <p class="text-sm md:text-sm font-medium text-center md:text-left text-[#717171] leading-5 mt-2">We reached here with our hard work and dedication</p>
+                <p class="text-sm md:text-sm font-medium text-center md:text-left text-[#717171] dark:text-[#9AA6AD] leading-5 mt-2">We reached here with our hard work and dedication</p>
             </div>
             <div class="w-full md:w-1/2 mt-10 md:mt-0">
                 <!-- Card Row Starts -->
@@ -204,8 +184,8 @@
                         <div class="w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/members.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] leading-6 mt-0 lg:mt-1">Members</p>
+                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Members</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -213,8 +193,8 @@
                         <div class="w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/club-booking.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] leading-6 mt-0 lg:mt-1">Clubs</p>
+                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Clubs</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -227,8 +207,8 @@
                         <div class="w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/event-booking.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] leading-6 mt-0 lg:mt-1">Events Booking</p>
+                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Events Booking</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -236,8 +216,8 @@
                         <div class="w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/payments.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] leading-6 mt-0 lg:mt-1">Payments</p>
+                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Payments</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -247,14 +227,14 @@
         </div>
     </section>
     <!-- Hero Section 3 -->
-    <section class="w-full">
+    <section class="w-full dark:bg-[#121212]">
         <div class="container mx-auto flex flex-wrap pb-10 md:py-20 justify-between">
             <div class="w-full md:w-5/12">
                 <div class="w-full h-[220px] md:h-[300px] bg-[url('../assets/hero-image-2.png')] bg-no-repeat bg-center bg-contain"></div>
             </div>
             <div class="w-full md:w-7/12 mt-15 md:mt-0">
-                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] leading-9 md:leading-11">How to design your site footer like we did</h2>
-                <p class="text-sm font-medium text-center md:text-left mt-y text-[#717171] leading-5">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">How to design your site footer like we did</h2>
+                <p class="text-sm font-medium text-center md:text-left mt-y text-[#717171] dark:text-[#9AA6AD] leading-5">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
                 <div class="w-full flex justify-center md:justify-start">
                     <button class="text-sm text-white leading-6 font medium rounded-sm bg-[#4CAF4F] py-2 px-6 mt-[46px] cursor-pointer hover:bg-green-700 transition-all hover:scale-105 duration-200 ">Learn More</button>
                 </div>
@@ -262,16 +242,16 @@
         </div>
     </section>
     <!-- Review Section -->
-    <section class="w-full bg-[#F5F7FA]">
+    <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
         <div class="container mx-auto flex flex-wrap justify-between py-5">
             <div class="w-full md:w-1/3">
                 <div class="w-full h-[220px] lg:h-[300px] bg-[url('../assets/tesla-image.png')] bg-center bg-contain bg-no-repeat"></div>
             </div>
             <div class="w-full md:w-2/3 grid content-between">
                 <div class="w-full">
-                    <p class="text-sm font-medium text-[#717171] text-center md:text-left leading-5">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                    <p class="text-sm font-medium text-[#717171] dark:text-[#9AA6AD] text-center md:text-left leading-5">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
                     <h4 class="text-[20px] font-semibold text-[#4CAF4F] text-center md:text-left mt-3 mb-1">Tim Smith</h4>
-                    <p class="text-sm font-normal text-[#89939E] text-center md:text-left leading-5">British Dragon Boat Racing Association</p>
+                    <p class="text-sm font-normal text-[#89939E] dark:text-[#9AA6AD] text-center md:text-left leading-5">British Dragon Boat Racing Association</p>
                 </div>
                 <div class="w-full flex flex-wrap lg:flex-nowrap justify-between py-10 md:py-0">
                     <div class="w-1/6 md:1/9">
@@ -301,13 +281,13 @@
         </div>
     </section>
     <!-- Marketing Section -->
-    <section class="w-full">
+    <section class="w-full dark:bg-[#121212]">
         <div class="container mx-auto flex flex-wrap py-5 md:pt-15 lg:pb-30">
             <!-- Heading Container -->
             <div class="w-full flex justify-center">
                 <div class="w-full lg:w-5/10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-center md:font-semibold text-[#4D4D4D] leading-9 md:leading-11">Caring is the new marketing</h2>
-                    <p class="text-sm font-medium text-[#717171] text-center mt-3 leading-5">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-center md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">Caring is the new marketing</h2>
+                    <p class="text-sm font-medium text-[#717171] dark:text-[#9AA6AD] text-center mt-3 leading-5">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
                 </div>
             </div>
             <!-- Card Container -->
@@ -315,8 +295,8 @@
                 <!-- Card -->
                     <div class="w-full md:w-6/13 lg:w-4/14 mb-30 lg:mb-5">
                         <div class="h-[220px] md:h-[300px] relative flex justify-center bg-[url('../assets/marketing-cart-image-1.png')] bg-cover bg-center bg-no-repeat rounded-lg">
-                            <div class="w-4/5 absolute -bottom-20 bg-white p-5 rounded-lg shadow-lg flex flex-col justify-between">
-                                <p class="text-sm lg:text-md text-[#717171] text-center leading-7">Creating Streamlined Safeguarding Processes with OneRen</p>
+                            <div class="w-4/5 absolute -bottom-20 bg-white dark:bg-[#161D21] p-5 rounded-lg shadow-lg dark:shadow-gray-500 flex flex-col justify-between">
+                                <p class="text-sm lg:text-md text-[#717171] dark:text-[#9AA6AD] text-center leading-7">Creating Streamlined Safeguarding Processes with OneRen</p>
                                 <div class="w-full flex items-center justify-center mt-2 lg:mt-5 cursor-pointer hover:text-green-700">
                                     <p class="text-sm lg:text-md font-semibold text-[#4CAF4F] leading-7">Reed More</p>
                                     <button class="size-3 lg:size-4  text-[#4CAF4F] hover:text-green-700 flex mt-1 ml-5"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
@@ -328,8 +308,8 @@
                     <!-- Card -->
                     <div class="w-full md:w-6/13 lg:w-4/14 mb-30 lg:mb-5">
                         <div class="h-[220px] md:h-[300px] relative flex justify-center bg-[url('../assets/marketing-cart-image-2.png')] bg-cover bg-center bg-no-repeat  rounded-lg">
-                            <div class="w-4/5 absolute -bottom-20 bg-white p-5 rounded-lg shadow-lg flex flex-col justify-between">
-                                <p class="text-sm lg:text-md text-[#717171] text-center leading-7 flex items-center">What are your safeguarding responsibilities and how can you manage them?</p>
+                            <div class="w-4/5 absolute -bottom-20 bg-white dark:bg-[#161D21] p-5 rounded-lg shadow-lg dark:shadow-gray-500 flex flex-col justify-between">
+                                <p class="text-sm lg:text-md text-[#717171] dark:text-[#9AA6AD] text-center leading-7 flex items-center">What are your safeguarding responsibilities and how can you manage them?</p>
                                 <div class="w-full flex items-center justify-center mt-2 lg:mt-5 cursor-pointer">
                                     <p class="text-sm lg:text-md font-semibold text-[#4CAF4F] leading-7 hover:text-green-700">Reed More</p>
                                     <button class="size-3 lg:size-4  text-[#4CAF4F] hover:text-green-700 flex mt-1 ml-5"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
@@ -341,8 +321,8 @@
                     <!-- Card -->
                     <div class="w-full md:w-6/13 lg:w-4/14 mb-30 lg:mb-5">
                         <div class="h-[220px] md:h-[300px] relative flex justify-center bg-[url('../assets/marketing-cart-image-3.png')] bg-cover bg-center bg-no-repeat rounded-lg">
-                            <div class="w-4/5 absolute -bottom-20 bg-white p-5 rounded-lg shadow-lg flex flex-col justify-between">
-                                <p class="text-sm lg:text-md text-[#717171] text-center leading-7">Revamping the Membership Model with Triathlon Australia</p>
+                            <div class="w-4/5 absolute -bottom-20 bg-white dark:bg-[#161D21] p-5 rounded-lg shadow-lg dark:shadow-gray-500 flex flex-col justify-between">
+                                <p class="text-sm lg:text-md text-[#717171] dark:text-[#9AA6AD] text-center leading-7">Revamping the Membership Model with Triathlon Australia</p>
                                 <div class="w-full flex items-center justify-center mt-2 lg:mt-5 cursor-pointer">
                                     <p class="text-sm lg:text-md font-semibold text-[#4CAF4F] leading-7 hover:text-green-700">Reed More</p>
                                     <button class="size-3 lg:size-4  text-[#4CAF4F] hover:text-green-700 flex mt-1 ml-5"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512"><path d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
@@ -354,10 +334,10 @@
         </div>
     </section>
     <!-- Demo Section -->
-    <section class="w-full bg-[#F5F7FA]">
+    <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
         <div class="container mx-auto py-10"> 
             <div class="w-full">
-                <h2 class="w-full lg:w-9/15 mx-auto text-3xl lg:text-4xl font-semibold text-[#263238] leading-[45px] lg:leading-[76px] text-center">Pellentesque suscipit fringilla libero eu.</h2>
+                <h2 class="w-full lg:w-9/15 mx-auto text-3xl lg:text-6xl font-semibold text-[#263238] dark:text-[#B4BEC4] leading-[45px] lg:leading-[76px] text-center">Pellentesque suscipit fringilla libero eu.</h2>
             </div>
             <div class="w-full flex justify-center mt-10">
                 <a class="text-sm font-medium leading-6 text-white flex px-5 py-[15px] md:py-[10px] rounded-lg bg-[#4CAF4F] hover:bg-green-700 transition-all duration-300 hover:scale-105" href="#">
@@ -442,49 +422,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        // Toggle button function
-        const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
-        const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
-        const sidebar = document.querySelector("#sibebar");
-
-        sidebarShowBtn.addEventListener("click", () => {
-            sidebar.classList.remove("translate-x-full");
-            sidebarShowBtn.classList.add("hidden");
-        });
-
-        sidebarRemoveBtn.addEventListener("click", () => {
-            sidebar.classList.remove("translate-x-0");
-            sidebar.classList.remove("hidden");
-        });
-
-        // Header Effect
-        const header = document.getElementById("main-header");
-        const nav = document.getElementById("header-nav")
-
-        window.addEventListener("scroll", () => {
-        if (window.scrollY > 10) {
-            header.classList.add(
-            "bg-[#F5F7FA]/70",
-            "backdrop-blur-md",
-            "shadow-md"
-            );
-            nav.classList.add("py-[15px]");
-
-            header.classList.remove("bg-[#F5F7FA]");
-            nav.classList.remove("py-[30px]");
-        } else {
-            header.classList.remove(
-            "bg-[#F5F7FA]/70",
-            "backdrop-blur-md",
-            "shadow-md"
-            );
-            nav.classList.remove("py-[15px]");
-
-            header.classList.add("bg-[#F5F7FA]");
-            nav.classList.add("py-[30px]");
-        }
-        });
-    </script>
+<script src="./src/index.js"></script>
 </body>
 </html>
