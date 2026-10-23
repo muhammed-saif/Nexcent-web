@@ -1,56 +1,61 @@
 
         
-        // Toggle button function
-        // const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
-        // const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
-        // const sidebar = document.querySelector("#sibebar");
+        const header = document.getElementById("main-header");
+        const nav = document.getElementById("header-nav");
+        const mainLogo = document.querySelector("#main-logo a img");
+        const light_dark_lg = document.querySelector("#light-dark-lg");
+        const light_dark_sm = document.querySelector("#light-dark-sm");
+        const sidebar = document.querySelector("#sibebar");
+        const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
+        const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
+
+
 
         // sidebarShowBtn.addEventListener("click", () => {
-        //     sidebar.classList.remove("translate-x-full");
-        //     sidebar.classList.remove("invisible ");
-        //     sidebar.classList.remove("opacity-0");
+        //     sidebar.classList.remove("invisible", "translate-x-full", "opacity-0");
+        //     sidebar.classList.add("visible", "translate-x-0", "opacity-100");
         //     sidebarShowBtn.classList.add("opacity-0");
+        //     light_dark_sm.classList.add("opacity-0");
         // });
 
         // sidebarRemoveBtn.addEventListener("click", () => {
-        //     sidebar.classList.add("translate-x-full");
-        //     sidebar.classList.add("invisible ");
-        //     sidebar.classList.add("opacity-0");
+        //     sidebar.classList.remove("visible", "translate-x-0", "opacity-100");
+        //     sidebar.classList.add("translate-x-full", "opacity-0");
         //     sidebarShowBtn.classList.remove("opacity-0");
+        //     light_dark_sm.classList.remove("opacity-0");
+
+        //     // Transition শেষ হওয়ার পরে invisible হবে
+        //     setTimeout(() => {
+        //         if (sidebar.classList.contains("translate-x-full")) {
+        //             sidebar.classList.add("invisible");
+        //         }
+        //     }, 300);
         // });
 
 
-        const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
-const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
-const sidebar = document.querySelector("#sibebar");
 
-sidebarShowBtn.addEventListener("click", () => {
-    sidebar.classList.remove("invisible", "translate-x-full", "opacity-0");
+        sidebarShowBtn.addEventListener("click", () => {
+            sidebar.classList.remove("invisible");
+            // Browser-কে initial অবস্থাটি apply করার সুযোগ দাও
+            requestAnimationFrame(() => {
+                    sidebar.classList.remove("translate-x-full", "opacity-0");
+                    sidebar.classList.add("translate-x-0", "opacity-100");
+                });
+        });
 
-    sidebar.classList.add("visible", "translate-x-0", "opacity-100");
-});
+        sidebarRemoveBtn.addEventListener("click", () => {
+            sidebar.classList.remove("translate-x-0", "opacity-100");
+            sidebar.classList.add("translate-x-full", "opacity-0");
 
-sidebarRemoveBtn.addEventListener("click", () => {
-    sidebar.classList.remove("visible", "translate-x-0", "opacity-100");
-
-    sidebar.classList.add("translate-x-full", "opacity-0");
-
-    // Transition শেষ হওয়ার পরে invisible হবে
-    setTimeout(() => {
-        if (sidebar.classList.contains("translate-x-full")) {
-            sidebar.classList.add("invisible");
-        }
-    }, 300);
-});
+            setTimeout(() => {
+                sidebar.classList.add("invisible");
+            }, 300);
+        });
 
 
 
         // Light and Dark theme effect
         
-        const light_dark_lg = document.querySelector("#light-dark-lg");
-        const light_dark_sm = document.querySelector("#light-dark-sm");
-        const mainLogo = document.querySelector("#main-logo a img");
-
         //   onclick="document.documentElement.classList.toggle('dark')"
         const rootElement = document.documentElement;
         const currentTheme = rootElement.classList;
@@ -85,36 +90,53 @@ sidebarRemoveBtn.addEventListener("click", () => {
 
 
         // Header Effect
-        const header = document.getElementById("main-header");
-        const nav = document.getElementById("header-nav");
-
         const headerScrollEffect = () =>{
             console.log(currentTheme);
             
             window.addEventListener("scroll", () => {
                 const Theme = currentTheme.contains("dark") ? "dark" : "light" ;
                 console.log(Theme);
-                if (window.scrollY > 10) {
+                if ((window.scrollY > 10) && (Theme === "light")){
                     header.classList.add(
-                    "bg-[#F5F7FA]/70",
-                    "backdrop-blur-md",
-                    "shadow-md"
+                        "bg-[#F5F7FA]/50",
+                        "backdrop-blur-md",
+                        "shadow-md"
                     );
-                    nav.classList.add("py-[15px]");
-
+                    nav.classList.add("md:py-[15px]");
                     header.classList.remove("bg-[#F5F7FA]");
-                    nav.classList.remove("py-[30px]");
-                } else {
-                    header.classList.remove(
-                    "bg-[#F5F7FA]/70",
-                    "backdrop-blur-md",
-                    "shadow-md"
-                    );
-                    nav.classList.remove("py-[15px]");
-
-                    header.classList.add("bg-[#F5F7FA]");
-                    nav.classList.add("py-[30px]");
+                    // nav.classList.remove("py-[30px]");
                 }
+                else if(Theme === "light"){
+                    header.classList.remove(
+                        "bg-[#F5F7FA]/70",
+                        "backdrop-blur-md",
+                        "shadow-md"
+                    );
+                    nav.classList.remove("md:py-[15px]");
+                    header.classList.add("bg-[#F5F7FA]");
+                    // nav.classList.add("py-[30px]");
+                }
+                else if((window.scrollY > 10) && (Theme === "dark")){
+                    header.classList.add(
+                        "dark:bg-[#161D21]/50",
+                        "backdrop-blur-md",
+                        "shadow-md"
+                    );
+                    nav.classList.add("md:py-[15px]");
+                    header.classList.remove("dark:bg-[#161D21]");
+                    // nav.classList.remove("py-[30px]");
+                } 
+                else{
+                    header.classList.remove(
+                        "dark:bg-[#161D21]/50",
+                        "backdrop-blur-md",
+                        "shadow-md"
+                    );
+                    nav.classList.remove("md:py-[15px]");
+                    header.classList.add("dark:bg-[#161D21]");
+                    // nav.classList.add("py-[30px]");
+                }
+                
                 });
             };
             headerScrollEffect();
