@@ -512,6 +512,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-center-safe {
+    justify-content: safe center;
+  }
   .justify-end {
     justify-content: flex-end;
   }
@@ -939,6 +942,9 @@
     .md\:h-\[300px\] {
       height: 300px;
     }
+    .md\:h-screen {
+      height: 100vh;
+    }
     .md\:w-1\/2 {
       width: calc(1 / 2 * 100%);
     }
@@ -962,6 +968,12 @@
     }
     .md\:w-7\/12 {
       width: calc(7 / 12 * 100%);
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:justify-center {
+      justify-content: center;
     }
     .md\:justify-start {
       justify-content: flex-start;
