@@ -1,20 +1,47 @@
 
         
         // Toggle button function
+        // const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
+        // const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
+        // const sidebar = document.querySelector("#sibebar");
+
+        // sidebarShowBtn.addEventListener("click", () => {
+        //     sidebar.classList.remove("translate-x-full");
+        //     sidebar.classList.remove("invisible ");
+        //     sidebar.classList.remove("opacity-0");
+        //     sidebarShowBtn.classList.add("opacity-0");
+        // });
+
+        // sidebarRemoveBtn.addEventListener("click", () => {
+        //     sidebar.classList.add("translate-x-full");
+        //     sidebar.classList.add("invisible ");
+        //     sidebar.classList.add("opacity-0");
+        //     sidebarShowBtn.classList.remove("opacity-0");
+        // });
+
+
         const sidebarShowBtn = document.querySelector("#sidebarShowBtn");
-        const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
-        const sidebar = document.querySelector("#sibebar");
+const sidebarRemoveBtn = document.querySelector("#sidebarRemoveBtn");
+const sidebar = document.querySelector("#sibebar");
 
-        sidebarShowBtn.addEventListener("click", () => {
-            sidebar.classList.remove("translate-x-full");
-            sidebarShowBtn.classList.add("opacity-0");
-        });
+sidebarShowBtn.addEventListener("click", () => {
+    sidebar.classList.remove("invisible", "translate-x-full", "opacity-0");
 
-        sidebarRemoveBtn.addEventListener("click", () => {
-            sidebar.classList.add("translate-x-full");
-            sidebarShowBtn.classList.remove("opacity-0");
-        });
+    sidebar.classList.add("visible", "translate-x-0", "opacity-100");
+});
 
+sidebarRemoveBtn.addEventListener("click", () => {
+    sidebar.classList.remove("visible", "translate-x-0", "opacity-100");
+
+    sidebar.classList.add("translate-x-full", "opacity-0");
+
+    // Transition শেষ হওয়ার পরে invisible হবে
+    setTimeout(() => {
+        if (sidebar.classList.contains("translate-x-full")) {
+            sidebar.classList.add("invisible");
+        }
+    }, 300);
+});
 
 
 
