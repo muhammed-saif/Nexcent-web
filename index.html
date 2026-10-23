@@ -10,8 +10,8 @@
 <body class="overflow-x-hidden">
     <!-- Header Section -->
     <header id="main-header" class="w-full transition-all ease-in duration-300 bg-[#F5F7FA] dark:bg-[#161D21] sticky top-0 z-100">
-        <nav id="header-nav" class="container mx-auto flex py-[30px] justify-between flex-wrap">
-            <div id="main-logo" class="w-2/6 lg:w-1/6">
+        <nav id="header-nav" class="container mx-auto flex py-[10px] md:py-[20px] md:py-[30px] justify-between flex-wrap">
+            <div id="main-logo" class="w-2/6 lg:w-1/6 z-100">
                 <a href="#"><img class="size-full object-contain" src="assets/mian-logo.png" alt="main-logo.png"></a>
             </div>
 
@@ -26,11 +26,11 @@
                     <li class="flex itemes-center"><a class="text-md text-gray-900 dark:text-[#F5F7FA]  font-regular font-sm leading-4 mr-20 py-2.5 uppercase transition hover:text-green-600 hover:border-b-2 hover:border-green-500" href="">Faq</a></li>
                     <!-- Light or Dark Button -->
                     <li class="hidden md:flex itemes-center transition-all duration-300 mx-5">
-                        <button id="light-dark-lg" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
-                            <svg class="hidden dark:block size-5 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+                        <button id="light-dark-lg" class="bg-gray-300 sm:p-1 md:p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
+                            <svg class="hidden dark:block size-3 md:size-4 lg:size-5 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
                             </svg>
-                            <svg class="dark:hidden size-5 stroke-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+                            <svg class="dark:hidden size-3 md:size-4 lg:size-5 stroke-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                             </svg>
                         </button>
@@ -41,7 +41,7 @@
             </div>
             <div class="w-4/6 flex justify-end mt-0 md:-mt-3 md:mt-0 lg:hidden">
                 <!-- Light or Dark Button -->
-                <button id="light-dark-sm" class="bg-gray-300 p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
+                <button id="light-dark-sm" class="bg-gray-300 p-1 md:p-2 rounded-full border-2 border-gray-900 dark:border-white dark:bg-[#3d3939]">
                     <svg class="hidden dark:block size-4 md:size-5 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
                     </svg>
@@ -51,7 +51,7 @@
                 </button>
                 <!-- Toggle Button -->
                 <button class="ml-5 ">
-                    <svg class="size-7 fill-gray-900 dark:fill-[#F5F7FA]" id="sidebarShowBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+                    <svg class="size-5 md:size-7 fill-gray-900 dark:fill-[#F5F7FA]" id="sidebarShowBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
                 </button>
             </div>
         </nav>
@@ -100,8 +100,8 @@
     </section>
     <!-- Client Section -->
     <section class="w-ful  dark:bg-[#121212]">
-        <div class="container mx-auto">
-            <div class="w-full py-10">
+        <div class="container mx-auto pt-10 pb-4 md:pb-14">
+            <div class="w-full md:pt-10 md:py-10">
                 <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-center leadin-9 md:leading-11 text-[#4D4D4D]  dark:text-[#B4BEC4]">Our Clients</h2>
                 <p class="text-md font-medium text-center text-[#717171]  dark:text-[#9AA6AD] my-4">We have been working with some Fortune 500+ clients</p>
             </div>
@@ -130,7 +130,7 @@
     </section>
     <!-- Community Section -->
     <section class="w-full dark:bg-[#161D21]">
-        <div class="container mx-auto py-10 md:py-20">
+        <div class="container mx-auto pt-10 md:pt-20 md:pb-8">
             <div class="w-full">
                 <h2 class="text-3xl md:text-4xl font-bold md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11 text-center">Manage your entire community<br> in a single system</h2>
                 <p class="text-md text-[#717171] dark:text-[#9AA6AD] font-medium leading-6 text-center my-3">Who is Nextcent suitable for?</p>
@@ -139,7 +139,7 @@
             <!-- Card Container -->
             <div class="w-full flex flex-wrap lg:flex-nowrap justify-evenly lg:justify-between mt-10">
                 <!-- Community Card -->
-                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
+                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-3 md:mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/membership.png" alt="membership.png"></div>
                     <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">Membership Organisations</h3>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <!-- Community Card -->
-                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
+                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-3 md:mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/national.png" alt="membership.png"></div>
                         <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">National Associations</h3>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
                 <!-- Community Card -->
-                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-5 lg:mb-0">
+                <div class="w-full mx-auto md:mx-0 md:w-6/13 lg:w-4/14 py-8 px-7 shadow-sm rounded-lg mb-3 md:mb-5 lg:mb-0">
                     <div class="w-full">
                         <div class="w-[65px] h-[56px] mx-auto"><img class="size-[100%] object-cover" src="assets/club.png" alt="membership.png"></div>
                         <h3 class="text-[20px] md:text-[28px] text-[#4D4D4D] dark:text-[#B4BEC4] font-bold leading-9 text-center my-2">Clubs And Groups</h3>
@@ -182,7 +182,7 @@
     </section>
     <!-- Data Section  -->
     <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
-        <div class="container mx-auto flex flex-wrap justify-between py-[66px]">
+        <div class="container mx-auto flex flex-wrap justify-between py-10 md:py-20]">
             <div class="w-full md:w-1/2 py-5">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">Helping a local</h2>
                 <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4CAF4F] leading-9 md:leading-11">business reinvent itsel</h3>
@@ -190,22 +190,22 @@
             </div>
             <div class="w-full md:w-1/2 mt-10 md:mt-0">
                 <!-- Card Row Starts -->
-                <div class="w-full flex justify-center mb-10">
+                <div class="w-full flex justify-between md:justify-center mb-10">
                     <!-- Card  Starts -->
-                        <div class="w-1/2 flex justify-center">
+                        <div class="w-5/11 md:w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/members.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Members</p>
+                                <h4 class="text-lg lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-3 md:leading-6 mt-0 lg:mt-1">Members</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
                         <!-- Card  Starts -->
-                        <div class="w-1/2 flex justify-center">
+                        <div class="w-5/11 md:w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/club-booking.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Clubs</p>
+                                <h4 class="text-lg lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-3 md:leading-6 mt-0 lg:mt-1">Clubs</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -213,22 +213,22 @@
                 <!-- card Row Ends -->
                 
                 <!-- Card Row Starts -->
-                <div class="w-full flex justify-center">
+                <div class="w-full flex justify-between md:justify-center">
                     <!-- Card  Starts -->
-                        <div class="w-1/2 flex justify-center">
+                        <div class="w-5/11 md:w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/event-booking.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Events Booking</p>
+                                <h4 class="text-lg lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-3 md:leading-6 mt-0 lg:mt-1">Events Booking</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
                         <!-- Card  Starts -->
-                        <div class="w-1/2 flex justify-center">
+                        <div class="w-5/11 md:w-1/2 flex justify-center">
                             <div class="size-[35px] lg:size-[48px] mr-5 mt-[6px]"><img class="size-[100%] object-cover" src="assets/payments.png" alt="members.png"></div>
                             <div class="">
-                                <h4 class="text-2xl lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
-                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-6 mt-0 lg:mt-1">Payments</p>
+                                <h4 class="text-lg lg:text-4xl font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-7 md:leading-9">2,245,341</h4>
+                                <p class="text-xs lg:text-sm font-medium text-[#717171] dark:text-[#9AA6AD] leading-3 md:leading-6 mt-0 lg:mt-1">Payments</p>
                             </div>
                         </div>
                         <!-- Card Ends -->
@@ -244,7 +244,7 @@
                 <div class="w-full h-[220px] md:h-[300px] bg-[url('../assets/hero-image-2.png')] bg-no-repeat bg-center bg-contain"></div>
             </div>
             <div class="w-full md:w-7/12 mt-15 md:mt-0">
-                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11">How to design your site footer like we did</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center md:text-left md:font-semibold text-[#4D4D4D] dark:text-[#B4BEC4] leading-9 md:leading-11 mb-3 md:mb-0">How to design your site footer like we did</h2>
                 <p class="text-sm font-medium text-center md:text-left mt-y text-[#717171] dark:text-[#9AA6AD] leading-5">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
                 <div class="w-full flex justify-center md:justify-start">
                     <button class="text-sm text-white leading-6 font medium rounded-sm bg-[#4CAF4F] py-2 px-6 mt-[46px] cursor-pointer hover:bg-green-700 transition-all hover:scale-105 duration-200 ">Learn More</button>
@@ -254,9 +254,9 @@
     </section>
     <!-- Review Section -->
     <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
-        <div class="container mx-auto flex flex-wrap justify-between py-20">
+        <div class="container mx-auto flex flex-wrap justify-between pt-10 md:py-20">
             <div class="w-full md:w-1/3">
-                <div class="w-full h-[220px] lg:h-[300px] bg-[url('../assets/tesla-image.png')] bg-center bg-contain bg-no-repeat mb-10 md:mb-0"></div>
+                <div class="w-full h-[220px] lg:h-[300px] bg-[url('../assets/tesla-image.png')] bg-center bg-contain bg-no-repeat mb-5 md:mb-0"></div>
             </div>
             <div class="w-full md:w-2/3 grid content-between">
                 <div class="w-full">
@@ -293,7 +293,7 @@
     </section>
     <!-- Marketing Section -->
     <section class="w-full dark:bg-[#121212]">
-        <div class="container mx-auto flex flex-wrap py-5 md:pt-15 lg:pb-30">
+        <div class="container mx-auto flex flex-wrap py-10 md:pt-15 lg:pb-30">
             <!-- Heading Container -->
             <div class="w-full flex justify-center">
                 <div class="w-full lg:w-5/10">
@@ -346,7 +346,7 @@
     </section>
     <!-- Demo Section -->
     <section class="w-full bg-[#F5F7FA] dark:bg-[#161D21]">
-        <div class="container mx-auto py-10"> 
+        <div class="container mx-auto py-10 md:py-10"> 
             <div class="w-full">
                 <h2 class="w-full lg:w-9/15 mx-auto text-3xl lg:text-6xl font-semibold text-[#263238] dark:text-[#B4BEC4] leading-[45px] lg:leading-[76px] text-center">Pellentesque suscipit fringilla libero eu.</h2>
             </div>
