@@ -5,5 +5,7 @@
 @layer utilities{
     .container {
     width: 80%;
+        @media (width <= 20rem) {
+        }
     }
 }
