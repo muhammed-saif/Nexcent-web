@@ -1,15 +1,15 @@
 {
-  "name": "nexcent-web",
+  "name": "muhammed-saif-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammed Saif",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
