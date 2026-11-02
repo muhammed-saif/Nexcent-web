@@ -1,7 +1,7 @@
 {
-  "name": "muhammed-saif-portfolio",
+  "name": "nexcent-web",
   "version": "1.0.0",
-  "description": "Personal portfolio website",
+  "description": "Nexcent Web Application",
   "main": "index.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
